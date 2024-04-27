@@ -1,0 +1,42 @@
+.projects{
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    max-width: 800px;
+    margin-top: 50px;
+}
+table td{
+    padding: 20px;
+}
+#project{
+    min-width: 110px;
+}
+#title{
+    min-width: 200px;
+}
+
+@media (max-width:600px){
+    #project{
+        min-width: 0;
+    }
+    #title{
+        min-width: 0;
+    }
+}
+section a {
+    color:rgb(233,227,110);
+}
+.headshot-about{
+    width: 335px;
+    border-radius: 50%;
+    padding: 40px;
+}
+@media screen and (max-width:1000px) {
+    .headshot-about{
+        padding: 40px 40px 0 40px;
+    }
+    
+}

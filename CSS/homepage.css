@@ -1,0 +1,237 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41,43,53);
+    font-family: Lato,'Times New Roman', Times, serif;
+}
+nav{
+    background-color: rgb(55,72,95);
+}
+.tech-container img{
+    height: 30px;
+    padding: 0.8px;
+    margin-top: 20px;
+}
+.nav-container{
+    display: flex;
+    justify-content:space-between ;
+}
+h3{
+    color: rgb(255,255,255);
+    letter-spacing: 2px;
+    margin: 0 30px 0 0;
+}
+.logo{
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.nav-link{
+    color: rgb(216,218,221);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.nav-link:hover{
+    background-color: rgb(57,67,83);
+}
+.hamburger{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;}
+.hamburger{
+    display: none;
+}
+.hamburger-list-container .nav-link{
+    display:block;
+}
+.hidden{
+    display: none !important;
+}
+@media (max-width:1000px) {
+    nav h3{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    .hamburger{
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+    .menu-container .nav-link{
+        display: none;
+    }
+}   
+.socials{
+    position: fixed;
+    top: 35%;
+    right: 0;
+    background-color: rgb(250,100,175);
+    width: 50px;
+    padding: 10px 5px ;
+    border-radius: 20px 0 0 20px;
+}
+.socials img{
+    width: 100%;
+}
+@media (max-width: 600px){
+    .socials{
+        display: none;
+    }
+}
+.main-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.introduction{
+    width: 40vw;
+    padding: 30px;
+    border-left: 4px solid rgb(255,255,255);
+}
+.headshot{
+   width: 355px;
+   border-radius: 50%;
+   padding: 40px;
+   margin-left: 10vw;
+}
+@media screen and (max-width:1000px) {
+    .main-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+    .introduction{
+        width: 90vw;
+        border-left: none;
+        text-align: center;
+    }
+    .headshot{
+        margin-left:0; 
+        padding: 40px 0;
+    }
+}
+.arrow{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 8px 8px 0;
+    padding: 15px;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+.bounce{
+    padding: 50px 0 0 50px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+.work-section{
+    background-color: rgb(59,62,77);
+    padding: 80px 50px;
+}
+.work-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work-card{
+    width: 25%;
+    background-color: rgb(29,31,38);
+    margin: 10px;
+    padding: 0 50px 50px 50px;
+}
+@media screen and (max-width:1000px){
+    .work-card{
+        width: 100%;
+    }
+    .bounce{
+        padding: 50px 0 0;
+    }
+}
+.html{
+    border-top: solid 8px rgb(242,128,87);
+}
+.css{
+    border-top: solid 8px rgb(88,130,203);
+}
+.js{
+    border-top: solid 8px rgb(3,144,144);
+}
+.react{
+    border-top: solid 8px rgb(239,255,66);
+}
+.qualification-section{
+    background-color: rgb(41,43,53);
+}
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(59,62,77) ;
+}
+.quote-container{
+    width: 40%;
+    padding: 40px;
+}
+.about-container{
+    width: 30%;
+    padding: 80px 0;
+}
+@media screen and (max-width:1000px){
+    .about-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.about-container,.quote-container{
+    padding: 100px 0;
+    width: 80%;
+}
+.quote{
+    font-size: 40px;
+    font-style: italic;
+}
+.quote-container p{
+    float: right;
+}
+@media screen and(max-width:1000px) {
+    .qualification-section{
+        padding: 250px 100px;
+    }
+}
+.education-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(41,43,53) ;
+}
+.education{
+    margin-right: 70px;
+}
